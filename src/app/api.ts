@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/",
+  baseURL: "https://predict2105.herokuapp.com/",
   headers: {
     "Content-Type": "multipart/form-data",
   },
