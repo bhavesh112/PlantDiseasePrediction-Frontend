@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.ccdfd8fc.js",
-    "index.html": "/index.html",
-    "main.ccdfd8fc.js.map": "/static/js/main.ccdfd8fc.js.map"
+    "main.js": "/PlantDiseasePrediction-Frontend/static/js/main.ccdfd8fc.js",
+    "index.html": "/PlantDiseasePrediction-Frontend/index.html",
+    "main.ccdfd8fc.js.map": "/PlantDiseasePrediction-Frontend/static/js/main.ccdfd8fc.js.map"
   },
   "entrypoints": [
     "static/js/main.ccdfd8fc.js"
