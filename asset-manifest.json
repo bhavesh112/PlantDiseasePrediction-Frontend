@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PlantDiseasePrediction-Frontend/static/css/main.5fffe478.css",
-    "main.js": "/PlantDiseasePrediction-Frontend/static/js/main.367e2a34.js",
+    "main.js": "/PlantDiseasePrediction-Frontend/static/js/main.f282ef6c.js",
     "static/media/background.png": "/PlantDiseasePrediction-Frontend/static/media/background.e623053cf7265dedc576.png",
     "static/media/nit.svg": "/PlantDiseasePrediction-Frontend/static/media/nit.2fbe492dd5f999a0c5b073b4566b4c13.svg",
     "static/media/leaf-head.svg": "/PlantDiseasePrediction-Frontend/static/media/leaf-head.989873bb4d3ed807202a8b6b9ce0de36.svg",
@@ -23,10 +23,10 @@
     "index.html": "/PlantDiseasePrediction-Frontend/index.html",
     "static/media/close.svg": "/PlantDiseasePrediction-Frontend/static/media/close.5152bcb35e90298fa5088746c9601fd4.svg",
     "main.5fffe478.css.map": "/PlantDiseasePrediction-Frontend/static/css/main.5fffe478.css.map",
-    "main.367e2a34.js.map": "/PlantDiseasePrediction-Frontend/static/js/main.367e2a34.js.map"
+    "main.f282ef6c.js.map": "/PlantDiseasePrediction-Frontend/static/js/main.f282ef6c.js.map"
   },
   "entrypoints": [
     "static/css/main.5fffe478.css",
-    "static/js/main.367e2a34.js"
+    "static/js/main.f282ef6c.js"
   ]
 }
