@@ -1,15 +1,20 @@
 import { createSlice, Dispatch } from "@reduxjs/toolkit";
 import api from "../app/api";
-import { diseaselist } from "../utils";
+import { Diseased, diseaseList, Healthy } from "../utils";
+interface PredictionState {
+  isLoading: boolean;
+  predicted_result: Diseased | Healthy | undefined;
+  errors: "";
+}
+const initialState = {
+  isLoading: false,
+  predicted_result: undefined,
+  errors: "",
+} as PredictionState;
 
 const prediction = createSlice({
   name: "prediction",
-  initialState: {
-    isLoading: false,
-    predicted_result: "",
-    errors: "",
-    isFailed: false,
-  },
+  initialState,
   reducers: {
     initLoader: (state) => {
       state.isLoading = true;
@@ -18,11 +23,10 @@ const prediction = createSlice({
       state.isLoading = false;
     },
     setResult: (state, { payload }) => {
-      state.predicted_result = diseaselist[payload];
+      state.predicted_result = diseaseList[payload];
     },
     setError: (state, { payload }) => {
       state.errors = payload;
-      state.isFailed = true;
     },
   },
 });
@@ -32,8 +36,13 @@ export const { initLoader, clearLoader, setResult, setError } =
 export const diagnoseImage = (file: any) => {
   return async (dispatch: Dispatch) => {
     dispatch(initLoader());
-    const { data } = await api.post<{ prediction: string }>("predict", file);
-    dispatch(setResult(data.prediction));
+    try {
+      const { data } = await api.post<{ prediction: string }>("predict", file);
+      dispatch(setResult(data.prediction));
+    } catch (err) {
+      console.error(err);
+      alert("Something went Wrong, Try Again");
+    }
     dispatch(clearLoader());
   };
 };
