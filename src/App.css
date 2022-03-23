@@ -15,7 +15,7 @@
 body {
   position: relative;
   color: #333333;
-  min-height: 110%;
+  min-height: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   background: url(./assets/background.png);
@@ -40,4 +40,12 @@ body {
 .disclaimer {
   text-align: center;
   margin-top: 12px;
+}
+@media screen and (max-width: 767px) {
+  html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+  }
 }
