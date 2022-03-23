@@ -8,7 +8,7 @@ import {
 } from "./Navbar.style";
 import leaf from "./../../assets/leaf-head.svg";
 import home from "./../../assets/home.svg";
-import doc from "./../../assets/paper.svg";
+import paper from "./../../assets/paper.svg";
 import about from "./../../assets/about.svg";
 import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
@@ -32,10 +32,15 @@ const Navbar = () => {
             <NavItem src={home} alt='home' title='home' active={isHome} />
           </Link>
           <Link to='/paper'>
-            <NavItem src={about} alt='about' title='about' active={isPaper} />
+            <NavItem
+              src={paper}
+              alt='term paper'
+              title='term paper'
+              active={isPaper}
+            />
           </Link>
           <Link to='/about'>
-            <NavItem src={doc} alt='doc' title='term paper' active={isAbout} />
+            <NavItem src={about} alt='about' title='about' active={isAbout} />
           </Link>
         </NavButtons>
       </NavbarWrapper>

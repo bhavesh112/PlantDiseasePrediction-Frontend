@@ -37,3 +37,7 @@ body {
   opacity: 0;
   transition: opacity 500ms ease-in;
 }
+.disclaimer {
+  text-align: center;
+  margin-top: 12px;
+}

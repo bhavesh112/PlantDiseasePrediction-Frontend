@@ -7,19 +7,21 @@ import Navbar from "./components/Navbar/Navbar";
 import StyledCard from "./components/StyledCard";
 import UploadForm from "./components/UploadForm/UploadForm";
 import Result from "./components/Result/Result";
-import Loader from "./components/Loader";
 import College from "./components/College";
+import About from "./components/About/About";
+import Download from "./components/Download/Download";
 function App() {
   return (
     <>
       <Provider store={store}>
         <Router>
           <Navbar />
-
           <StyledCard>
             <Routes>
               <Route path='/' element={<UploadForm />} />
               <Route path='/result' element={<Result />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/paper' element={<Download />} />
             </Routes>
           </StyledCard>
           <College />

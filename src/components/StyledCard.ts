@@ -12,7 +12,7 @@ const StyledCard = styled.div`
   left: calc(50% - 280px);
   top: 200px;
   width: 560px;
-  padding: 40px;
+  padding: 40px 20px;
   border: 3px solid #ffffff4d;
 `;
 

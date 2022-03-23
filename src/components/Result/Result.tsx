@@ -29,6 +29,7 @@ const Result = () => {
   }, [isLoading, predicted_result, navigate]);
   if (isLoading) return <Loader />;
   if (!predicted_result) return <Loader />;
+
   return (
     <>
       <Wrapper>
