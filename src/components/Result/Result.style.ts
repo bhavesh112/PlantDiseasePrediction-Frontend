@@ -28,4 +28,15 @@ export const ResultCard = styled.div<ResultCardProps>`
     text-decoration: none;
     font-style: italic;
   }
+  @media (max-width: 767px) {
+    & img {
+      height: 40px;
+    }
+    & .plant-name {
+      font-size: 18px;
+    }
+    & a {
+      font-size: 18px;
+    }
+  }
 `;

@@ -27,9 +27,19 @@ const CollegeWrapper = styled.div`
   & .branch {
     color: rgba(255, 255, 255, 0.5);
   }
+  @media (max-width: 767px) {
+    font-size: 20px;
+    left: 10px;
+  }
 `;
 const LogoWrapper = styled.div`
   position: absolute;
   right: 20px;
   bottom: 20px;
+  @media (max-width: 767px) {
+    & img {
+      height: 140px;
+    }
+    right: 10px;
+  }
 `;

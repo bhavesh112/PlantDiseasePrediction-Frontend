@@ -14,6 +14,13 @@ const StyledCard = styled.div`
   width: 560px;
   padding: 40px 20px;
   border: 3px solid #ffffff4d;
+
+  @media (max-width: 767px) {
+    left: 0;
+    top: 140px;
+    width: 99%;
+    padding: 20px 10px;
+  }
 `;
 
 export default StyledCard;

@@ -42,4 +42,12 @@ const DownloadButton = styled.a`
     display: inline-block;
     padding-top: 4px;
   }
+  @media (max-width: 767px) {
+    margin: 20px auto 0;
+    padding: 16px;
+    font-size: 16px;
+    & img {
+      height: 30px !important;
+    }
+  }
 `;

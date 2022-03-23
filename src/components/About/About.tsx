@@ -40,11 +40,18 @@ const Prof = styled.div`
   font-size: 20px;
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
+
   & .name {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 8px;
     line-height: 1;
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+    & .name {
+      font-size: 24px;
+    }
   }
 `;
 
@@ -54,6 +61,9 @@ const TeamMembersWrapper = styled.div`
   & p {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
   }
   & ul {
     list-style: none;
@@ -68,6 +78,9 @@ const TeamMembersWrapper = styled.div`
     display: inline-block;
     &:not(:last-child) {
       margin-right: 12px;
+    }
+    @media (max-width: 767px) {
+      font-size: 16px;
     }
   }
 `;

@@ -18,6 +18,10 @@ export const CardTitle = styled.div<CardTitleProps>`
   color: #ffffffb2;
   text-align: center;
   margin-top: ${(props) => props.mar && "24px"};
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 `;
 
 export const UploadButton = styled.label`
@@ -39,6 +43,15 @@ export const UploadButton = styled.label`
     display: inline-block;
     padding-top: 4px;
   }
+
+  @media (max-width: 767px) {
+    margin: 20px auto 0;
+    padding: 16px;
+    font-size: 16px;
+    & img {
+      height: 30px;
+    }
+  }
 `;
 export const FileWrapper = styled.div`
   border: 2px solid rgba(255, 255, 255, 0.35);
@@ -49,6 +62,11 @@ export const FileWrapper = styled.div`
   padding: 6px;
   justify-content: space-between;
   margin-top: 40px;
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
 `;
 export const FileName = styled.div`
   & span {
@@ -87,5 +105,8 @@ export const FileSubmit = styled.button`
   cursor: pointer;
   & img {
     height: 30px;
+  }
+  @media (max-width: 767px) {
+    font-size: 16px;
   }
 `;
